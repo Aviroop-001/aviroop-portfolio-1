@@ -1,0 +1,80 @@
+@import '../../global.scss';
+
+.recommendations{
+    background-color: $darkest;
+    color: $lightest;
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem 0;
+        font-weight: lighter;
+        text-shadow: $light 2px 2px 3px;
+    }
+    .container{
+        // border: 2px blue solid;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card{
+            // border: red 2px dotted;
+            overflow: hidden;
+            flex: 0.3;
+            height: 22rem;
+            background-color: $lightest;
+            color: $darkest;
+            border-radius: 10px;
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            transition: all 0.3s ease-in-out;
+            .upper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                .social-icon{
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+                .person-image{
+                    height: 3rem;
+                    width: 3rem;
+                }
+            }
+            .middle{
+                p{
+                    background-color: $lighter;
+                    border-radius: 0.4rem;
+                    color: $darker;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    margin: 1rem;
+                }
+            }
+            .lower{
+                color: $darkest;
+                text-shadow: $dark 2px 2px 3px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &.priority{
+                height: 24rem;
+                flex: 0.32;
+                &:hover{
+                    height: 24.2rem;
+                    box-shadow: $light 3px 3px 5px;
+                }
+            }
+            &:hover{
+                height: 22.5rem;
+                box-shadow: $light 3px 3px 7px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.App{
+    height: 100vh;
+    // ::-webkit-scrollbar{
+    //     width: 10px;
+    //     background-color: rgb(206, 206, 206);
+    // }
+    // ::-webkit-scrollbar-track-piece:start{
+    //     background-color: rgb(148, 148, 148);
+    // }
+    // ::-webkit-scrollbar-thumb{
+    //       background-color: rgb(65, 64, 64);
+    //       border-radius: 20px;
+    // }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        >*{
+            height: calc(100vh - 70px);
+            width: 100vw;
+            scroll-snap-align: start;
+        }
+    }
+}

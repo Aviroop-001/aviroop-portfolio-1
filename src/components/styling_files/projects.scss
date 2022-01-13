@@ -1,0 +1,64 @@
+@import '../../global.scss'; 
+
+.projects{
+    background-color: $darkest;
+    color: $lightest;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem 0;
+        font-weight: lighter;
+        text-shadow: $light 2px 2px 3px;
+    }
+    ul{
+        // border: pink 1px solid;
+        display: flex;
+        margin: 1rem;
+        padding: 0.2rem 0;
+        justify-content: space-around;
+        width: 70%;
+        //List styling done in Projects_list scss file !!!!
+    }
+    .container{
+        // border: cyan 1px solid;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .project{
+            border: red 1.5px dotted;
+            height: 9rem;
+            width: 16rem;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                z-index: 1;
+                transition: all 0.5s ease;
+            }
+            margin: 0.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: $light 1px solid;
+            border-radius: 1rem;
+            position: relative;
+            h3{
+                position: absolute;
+                font-size: 1.5rem;
+            }
+            &:hover{
+                background-color: $darkest;
+                img{
+                    opacity: 0.1;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@import '../../global.scss';
+
+.skills{
+    background-color: $darkest;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .slider{
+        // border: 1px red solid;
+        height: 370px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-in-out;
+        .container{
+            // border: 2px blueviolet solid;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .item{
+                // border: rgb(10, 19, 1) 1px solid;
+                border-radius: 1.5rem;
+                background-color: $lightest;
+                width: 53rem;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                .left{
+                    // border: darkblue 2px dotted;
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    overflow: hidden;
+                    img{
+                        height: 20%;
+                        width: 22%;
+                        margin: 0 0 1rem 0;
+                    }
+                    h2{
+                        font-size: 1.7rem;
+                        color: $darkest;
+                        margin: 0 0 1rem 0;
+                        text-shadow: $dark 2px 2px 3px;
+                        overflow: hidden;
+                    }
+                    p{
+                        color: $darkest;
+                        text-align: center;
+                        margin: 0 0 0.5rem 0.5rem;
+                        overflow: hidden;
+                    }
+                    span{
+                        text-decoration: underline;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                        overflow: hidden;
+                    }
+
+                }
+                .right{
+                    // border: darkgreen 2px dotted;
+                    flex: 8;
+                    height: 95%;
+                    overflow: hidden;
+                    padding: 0.5rem;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 1.5rem;
+                        box-shadow: $darker 3px 3px 7px;
+                    }
+                }
+            }
+        }
+    }
+    .arrow{
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        cursor: pointer;
+        &.left{
+            left: 6rem;
+        }
+        &.right{
+            right: 6rem;
+        }
+        &:hover{
+            height: 3.3rem;
+            width: 3.3rem;
+        }
+    }
+}

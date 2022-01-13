@@ -1,0 +1,17 @@
+@import '../../global.scss'; 
+
+.projects_list{
+    // border: rgb(178, 214, 16) 1px solid;
+    cursor: pointer;
+    background-color: $lightest;
+    color: $darkest;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+    &.active{
+        background-color: $dark;
+        color: $lightest;
+        box-shadow: $light 2px 2px 3px;
+    }
+}
