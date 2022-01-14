@@ -4,3 +4,11 @@ $dark: #4D4C7D;
 $light: #827397;
 $lighter: rgb(196, 167, 176);
 $lightest: rgb(216, 185, 195);
+
+$width: 768px;
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+        @content
+    }
+}

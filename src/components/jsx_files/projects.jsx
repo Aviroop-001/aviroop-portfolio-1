@@ -9,19 +9,19 @@ export default function Projects() {
     const List = [
         {
             id : "react",
-            title : "React Apps"
+            title : "ReactJS"
         },
         {
             id : "node",
-            title : "NodeJS Apps"
+            title : "NodeJS"
         },
         {
             id : "mern",
-            title : "MERN Apps"
+            title : "MERN"
         },
         {
             id : "aiml",
-            title : "AI & ML"
+            title : "AI-ML"
         },
     ]
     const [Data, setData] = useState([]);

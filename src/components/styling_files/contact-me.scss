@@ -3,6 +3,9 @@
 .contact{
     background-color: $darkest;
     display: flex;
+    @include mobile{
+        flex-direction: column;
+    }
     
     .left{
         flex: 1;
@@ -24,6 +27,9 @@
             color: $lightest;
             text-shadow: $light 2px 2px 3px;
             font-weight: lighter;
+            @include mobile{
+                font-size: 1.8rem;
+            }
         }
         form{
             // border: 2px solid brown;
@@ -43,6 +49,10 @@
                 font-weight: bolder;
                 color: $lightest;
                 text-align: center;
+                @include mobile{
+                    font-size: 1rem;
+                    width: 85%;
+                }
             }
             textarea{
                 border-radius: 0.3rem;
@@ -52,6 +62,10 @@
                 width: 70%;
                 height: 35%;
                 box-shadow: $darker 2px 2px 5px;
+                @include mobile{
+                    font-size: 1rem;
+                    width: 85%;
+                }
             }
             button{
                 margin: 2rem;

@@ -6,9 +6,12 @@
     h1{
         font-size: 3rem;
         text-align: center;
-        margin: 1rem 0;
+        margin: 0.2rem 0;
         font-weight: lighter;
         text-shadow: $light 2px 2px 3px;
+        @include mobile{
+            font-size: 1.7rem;
+        }
     }
     .container{
         // border: 2px blue solid;
@@ -16,6 +19,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mobile{
+            flex-direction: column;
+            height: 93%;
+        }
         .card{
             // border: red 2px dotted;
             overflow: hidden;
@@ -30,6 +37,9 @@
             justify-content: center;
             justify-content: space-evenly;
             transition: all 0.3s ease-in-out;
+            @include mobile{
+                margin: 0.5rem;
+            }
             .upper{
                 display: flex;
                 justify-content: center;
@@ -38,10 +48,18 @@
                 .social-icon{
                     height: 2.5rem;
                     width: 2.5rem;
+                    @include mobile{
+                        height: 2rem;
+                        width: 2rem;
+                    }
                 }
                 .person-image{
                     height: 3rem;
                     width: 3rem;
+                    @include mobile{
+                        height: 2.2rem;
+                        width: 2.2rem;
+                    }
                 }
             }
             .middle{
@@ -51,7 +69,7 @@
                     color: $darker;
                     text-align: center;
                     font-size: 1.1rem;
-                    margin: 1rem;
+                    margin: 0.3rem;
                 }
             }
             .lower{

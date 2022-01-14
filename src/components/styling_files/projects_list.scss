@@ -9,6 +9,11 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     transition: all 0.5s ease;
+    @include mobile{
+        font-size: 1.3rem;
+        margin: 0 2px;
+        text-align: center;
+    }
     &.active{
         background-color: $dark;
         color: $lightest;

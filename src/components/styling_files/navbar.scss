@@ -20,11 +20,18 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            @include mobile{
+                width: 60%;
+            }
             #logo{
                 color: $lightest;
                 font-size: 2.1rem;
                 letter-spacing: 0.5rem;
                 transition: all 1s ease-in-out;
+                @include mobile{
+                    font-size: 2rem;
+                    letter-spacing: 0.2rem;
+                }
             }
             .shortcontact{
                 // border: darkorange 1px solid;
@@ -33,6 +40,9 @@
                 transition: all 1s ease-in-out;
                 border-radius: 5px;
                 height: 2rem;
+                @include mobile{
+                    display: none;
+                }
                 span{
                     font-family: 'Segoe UI';
                     font-weight: lighter;
@@ -55,6 +65,9 @@
             flex-direction: column;
             justify-content: space-evenly;
             cursor: pointer;
+            @include mobile{
+                margin-right: 40px;
+            }
             span{
                 height: 0.16rem;
                 width: 1.6rem;
@@ -62,6 +75,9 @@
                 border-radius: 30px;
                 transform-origin: left;
                 transition: all 0.5s ease-in-out;
+                @include mobile{
+                    width: 1.4rem;
+                }
             }
         }
         .burger:hover{

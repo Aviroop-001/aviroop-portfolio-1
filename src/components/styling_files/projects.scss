@@ -12,6 +12,10 @@
         margin: 1rem 0;
         font-weight: lighter;
         text-shadow: $light 2px 2px 3px;
+        @include mobile{
+            font-size: 2.3rem;
+            height: 4rem;
+        }
     }
     ul{
         // border: pink 1px solid;
@@ -20,6 +24,13 @@
         padding: 0.2rem 0;
         justify-content: space-around;
         width: 70%;
+        @include mobile{
+            width: 97%;
+            padding: 0.1rem 0;
+            margin: 1px;
+            margin-bottom: 4rem;
+            height: 3rem;
+        }
         //List styling done in Projects_list scss file !!!!
     }
     .container{
@@ -29,6 +40,9 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        @include mobile{
+            width: 95%;
+        }
         .project{
             border: red 1.5px dotted;
             height: 9rem;
@@ -48,6 +62,11 @@
             border: $light 1px solid;
             border-radius: 1rem;
             position: relative;
+            @include mobile{
+                height: 8rem;
+                width: 12rem;
+                margin: 0.5rem 0.1rem;
+            }
             h3{
                 position: absolute;
                 font-size: 1.5rem;
